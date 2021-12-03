@@ -1,9 +1,7 @@
 # VueUdemy
 
-Assignements, exercises and code alongs from the Vue course recently purchased from Udemy. 
+Assignements, exercises and code alongs from the Vue course recently purchased. 
 
-Dale Black Friday !
-
-* Do not forget to npm install...
+Thank you Max and Black Friday for the experience.
 
 :)

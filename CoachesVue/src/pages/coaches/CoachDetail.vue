@@ -59,3 +59,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+header {
+  background-color: white;
+}
+</style>

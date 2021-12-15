@@ -6,7 +6,7 @@
       <label for="frontend">Frontend</label>
     </span>
     <span class="filter-option">
-      <input type="checkbox" id="backend" checked />
+      <input type="checkbox" id="backend" checked @change="setFilter" />
       <label for="backend">Backend</label>
     </span>
     <span class="filter-option">
@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 h2 {
   margin: 0.5rem 0;
 }

@@ -1,7 +1,7 @@
-# VueUdemy
+# VueCourse
 
-Assignements, exercises and code alongs from the Vue course recently purchased. 
+On October of 2021, a Vue course was purchased. 
 
-Thank you Max and Black Friday for the experience.
+Thank you Mr. Max and Black Friday for the experience.
 
 :)

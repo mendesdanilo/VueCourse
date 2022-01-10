@@ -4,24 +4,23 @@ const app = Vue.createApp({
       counter: 0,
     };
   },
-  computed: {
-    notThereYet() {
-      if (this.counter < 37) {
-        return "Not there yet!";
-      } else if (this.counter === 37) {
-        return this.counter;
-      } else {
-        return "Too much!";
-      }
+  watch: {
+    showResult() {
+      const that = this;
+      setTimeout(function () {
+        that.number = 0;
+      }, 5000);
     },
-    watch: {
-      notThereYet() {
-        console.log("watcher executing...");
-        const that = this;
-        setTimeout(function () {
-          that.counter = 0;
-        }, 5000);
-      },
+  },
+  computed: {
+    showResult() {
+      if (this.counter < 37) {
+        return "No there yet";
+      } else if (this.counter > 37) {
+        return "Too much";
+      } else {
+        return "You got 37";
+      }
     },
   },
   methods: {

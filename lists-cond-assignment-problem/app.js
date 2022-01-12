@@ -3,13 +3,17 @@ const app = Vue.createApp({
     return {
       enteredTask: "",
       tasks: [],
-      paragraphIsVisible: true,
+      taskIsVisible: true,
     };
   },
-
+  computed: {
+    buttonCaption() {
+      return this.taskIsVisible ? "Hide List" : "Show List";
+    },
+  },
   methods: {
-    toggleParagraphVisibility() {
-      this.paragraphIsVisible = !this.paragraphIsVisible;
+    toggleTaskVisibility() {
+      this.taskIsVisible = !this.taskIsVisible;
     },
     addTask() {
       this.tasks.push(this.enteredTask);

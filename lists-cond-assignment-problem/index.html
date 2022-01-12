@@ -28,7 +28,7 @@
       <!-- 2) Output the list of tasks here -->
       <ul v-else>
         <li
-          v-if="paragraphIsVisible"
+          v-if="taskIsVisible"
           v-for="task in tasks"
           :key="task"
           @click="removeTask()"
@@ -38,8 +38,8 @@
       </ul>
       <!-- 3) When the below button is pressed, the list should be shown or hidden -->
       <!-- BONUS: Also update the button caption -->
-      <button v-if="tasks.length > 0" @click="toggleParagraphVisibility">
-        {{ paragraphIsVisible ? 'Hide' : 'Show' }}
+      <button v-if="tasks.length > 0" @click="toggleTaskVisibility">
+        {{ buttonCaption }}
       </button>
     </section>
   </body>

@@ -13,31 +13,12 @@ export default {
 </script>
 
 <style scoped>
-li {
-  margin: 1rem 0;
-  border: 1px solid #ccc;
-  padding: 1rem;
-}
-
-h3,
-p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.highlight {
-  font-weight: bold;
-}
-
-.rating--poor {
-  color: #b80056;
-}
-
-.rating--average {
-  color: #330075;
-}
-
-.rating--great {
-  color: #008327;
+section {
+  margin: 2rem auto;
+  max-width: 40rem;
+  background-color: rgb(247, 247, 247);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-bottom: 10px;
+  border-radius: 15px;
 }
 </style>
